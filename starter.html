@@ -35,10 +35,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a href="#" class="nav-link"></a>
       </li> -->
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <button href="#" class="nav-link" data-toggle="modal" data-target="#modal-default" type="button" style="border: none;">
           <i class="nav-icon fas fa-box-open"></i>
           Suggestion Box
-        </a>
+        </button>
       </li>
     </ul>
 
@@ -160,68 +160,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </li>
                  </ul>
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-user-tie"></i> 
-                  Employee
-                </a>
-                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-building"></i> 
-                  Department
-                </a>
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-hammer"></i>
-                  Job Position
-                </a>
-                <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-box"></i>
                   Suggestion
                 </a>
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-calendar-day"></i>  
-                  Custom Holiday
-                </a>
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-user-lock"></i>
-                  Role Permission
-                </a>
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-user-shield"></i>
-                  User Role
-                </a>
-               </li>
-          <!-- <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Starter Pages
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav> -->
+               
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
@@ -247,6 +189,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div>
     <!-- /.content -->
   </div>
+
+  <div class="modal fade" id="modal-default">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Suggestion Box</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="">Title</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Description</label>
+              <textarea name="" id="" cols="25" rows="5" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -266,7 +238,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong><a href="https://adminlte.io">Fullspeed Tehchnologies Inc.</a></strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
