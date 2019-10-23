@@ -229,24 +229,170 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Dashboard</h1>
-            </div><!-- /.col -->
+              <h1>Dashboard</h1>
+            </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active">Dashboard</li>
               </ol>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
+            </div>
+          </div>
         </div><!-- /.container-fluid -->
-      </div>
-    <!-- /.content -->
-  </div>
+      </section>
+  
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Leave Requests Approver</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Department</th>
+                    <th>Team</th>
+                    <th>Request Type</th>
+                    <th>Date Requested</th>
+                    <th>Remark</th>
+                    <th>Decision</th>
+                    <th>Date Remarked</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>AdOps</td>
+                      <td>MVC</td>
+                      <td>Leave</td>
+                      <td>Jan. 29, 2019</td>
+                      <td><span class="badge bg-info">Pending</span></td>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" class="form-check-input">
+                          <label for="" class="form-check-label">Accept</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input">
+                            <label for="" class="form-check-label">Pending</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input">
+                            <label for="" class="form-check-label">Decline</label>
+                        </div>
+                      </td>
+                      <td>Waiting</td>
+                      <td>
+                        
+                        <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                      
+                        <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
+                    
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                            
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>AdOps</td>
+                        <td>MVC</td>
+                        <td>Leave</td>
+                        <td>Jan. 29, 2019</td>
+                        <td><span class="badge bg-success">Accepted</span></td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input">
+                            <label for="" class="form-check-label">Accept</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input type="radio" class="form-check-input">
+                              <label for="" class="form-check-label">Pending</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input type="radio" class="form-check-input">
+                              <label for="" class="form-check-label">Decline</label>
+                          </div>
+                        </td>
+                        <td>Oct. 29, 2019</td>
+                        <td>
+                          
+                          <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                        
+                          <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
+                      
+                          <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                              
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>John Doe</td>
+                          <td>AdOps</td>
+                          <td>MVC</td>
+                          <td>Leave</td>
+                          <td>Jan. 29, 2019</td>
+                          <td><span class="badge bg-danger">Declined</span></td>
+                          <td>
+                            <div class="form-check form-check-inline">
+                              <input type="radio" class="form-check-input">
+                              <label for="" class="form-check-label">Accept</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input">
+                                <label for="" class="form-check-label">Pending</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input">
+                                <label for="" class="form-check-label">Decline</label>
+                            </div>
+                          </td>
+                          <td>Jan. 29, 2019</td>
+                          <td>
+                            
+                            <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                          
+                            <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
+                        
+                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                
+                          </td>
+                        </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Department</th>
+                    <th>Team</th>
+                    <th>Request Type</th>
+                    <th>Date Requested</th>
+                    <th>Remark</th>
+                    <th>Decision</th>
+                    <th>Date Remarked</th>
+                    <th>Action</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
+    </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -262,11 +408,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
+    <!-- <div class="float-right d-none d-sm-inline">
       Anything you want
-    </div>
+    </div> -->
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong><a href="https://adminlte.io">Fullspeed Technologies Inc.</a></strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
@@ -279,5 +425,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script>
+  $(() => {
+    $('#example2').DataTable();
+  });
+</script>
 </body>
 </html>
