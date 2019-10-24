@@ -188,40 +188,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   User Role
                 </a>
                </li>
-          <!-- <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Starter Pages
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav> -->
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
@@ -249,147 +215,140 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Main content -->
       <section class="content">
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Leave Requests Approver</h3>
+          <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header border-0">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="card-title">Summary</h3>
+                    <a href="javascript:void(0);">View Report</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex">
+                    <p class="d-flex flex-column">
+                      <span class="text-bold text-lg">Requests Status</span>
+                      <!-- <span>Sales Over Time</span> -->
+                    </p>
+                    <p class="ml-auto d-flex flex-column text-right">
+                      <!-- <span class="text-success">
+                        <i class="fas fa-arrow-up"></i> 33.1%
+                      </span> -->
+                      <span class="text-muted">Since last month</span>
+                    </p>
+                  </div>
+                  <!-- /.d-flex -->
+  
+                  <div class="position-relative mb-4">
+                    <canvas id="sales-chart" height="200"></canvas>
+                  </div>
+  
+                  <div class="d-flex flex-row justify-content-end">
+                    <!-- <span class="mr-2">
+                      <i class="fas fa-square text-primary"></i> Dev Team
+                    </span> -->
+  
+                    <!-- <span class="mr-2">
+                      <i class="fas fa-square text-gray"></i> BPO Team
+                    </span>
+
+                    <span>
+                        <i class="fas fa-square text-red"></i> Admin Team
+                    </span> -->
+                  </div>
+                </div>
               </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>Employee Name</th>
-                    <th>Department</th>
-                    <th>Team</th>
-                    <th>Request Type</th>
-                    <th>Date Requested</th>
-                    <th>Remark</th>
-                    <th>Decision</th>
-                    <th>Date Remarked</th>
-                    <th>Action</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>John Doe</td>
-                      <td>AdOps</td>
-                      <td>MVC</td>
-                      <td>Leave</td>
-                      <td>Jan. 29, 2019</td>
-                      <td><span class="badge bg-info">Pending</span></td>
-                      <td>
-                        <div class="form-check form-check-inline">
-                          <input type="radio" class="form-check-input">
-                          <label for="" class="form-check-label">Accept</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input">
-                            <label for="" class="form-check-label">Pending</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input">
-                            <label for="" class="form-check-label">Decline</label>
-                        </div>
-                      </td>
-                      <td>Waiting</td>
-                      <td>
-                        
-                        <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
-                      
-                        <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
-                    
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                            
-                      </td>
-                    </tr>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>AdOps</td>
-                        <td>MVC</td>
-                        <td>Leave</td>
-                        <td>Jan. 29, 2019</td>
-                        <td><span class="badge bg-success">Accepted</span></td>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input">
-                            <label for="" class="form-check-label">Accept</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                              <input type="radio" class="form-check-input">
-                              <label for="" class="form-check-label">Pending</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                              <input type="radio" class="form-check-input">
-                              <label for="" class="form-check-label">Decline</label>
-                          </div>
-                        </td>
-                        <td>Oct. 29, 2019</td>
-                        <td>
-                          
-                          <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
-                        
-                          <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
-                      
-                          <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                              
-                        </td>
-                      </tr>
+              <!-- /.card -->
+
+              <div class="card">
+                  <div class="card-header border-0">
+                    <h3 class="card-title">Recent Pending Requests</h3>
+                    <div class="card-tools">
+                      <!-- <a href="#" class="btn btn-tool btn-sm">
+                        <i class="fas fa-download"></i>
+                      </a>
+                      <a href="#" class="btn btn-tool btn-sm">
+                        <i class="fas fa-bars"></i>
+                      </a> -->
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <table class="table table-striped table-valign-middle">
+                      <thead>
                       <tr>
-                          <td>John Doe</td>
-                          <td>AdOps</td>
-                          <td>MVC</td>
+                        <th>Type</th>
+                        <th>Reason</th>
+                        <th>Date Requested</th>
+                        <!-- <th>Status</th> -->
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <tr>
                           <td>Leave</td>
-                          <td>Jan. 29, 2019</td>
-                          <td><span class="badge bg-danger">Declined</span></td>
-                          <td>
-                            <div class="form-check form-check-inline">
-                              <input type="radio" class="form-check-input">
-                              <label for="" class="form-check-label">Accept</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input">
-                                <label for="" class="form-check-label">Pending</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input">
-                                <label for="" class="form-check-label">Decline</label>
-                            </div>
-                          </td>
-                          <td>Jan. 29, 2019</td>
-                          <td>
-                            
-                            <button class="btn btn-primary"><i class="fas fa-eye"></i></button>
-                          
-                            <button class="btn btn-info"><i class="fas fa-question-circle"></i></button>
-                        
-                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                
-                          </td>
+                          <td>Car accident</td>
+                          <td>Jan. 20, 2019</td>
                         </tr>
-                  </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>Employee Name</th>
-                    <th>Department</th>
-                    <th>Team</th>
-                    <th>Request Type</th>
-                    <th>Date Requested</th>
-                    <th>Remark</th>
-                    <th>Decision</th>
-                    <th>Date Remarked</th>
-                    <th>Action</th>
-                  </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+                        <tr>
+                          <td>Team Building</td>
+                          <td>Going to boracay</td>
+                          <td>Feb. 19, 2019</td>
+                        </tr>
+                        <tr>
+                          <td>Bring Laptop</td>
+                          <td>Push to master later</td>
+                          <td>Mar. 13, 2019</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- /.card -->
           </div>
-          <!-- /.col -->
+          <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header border-0">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="card-title">All Team</h3>
+                    <a href="javascript:void(0);">View Report</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex">
+                    <p class="d-flex flex-column">
+                      <span class="text-bold text-lg">Requests Status</span>
+                      <!-- <span>Sales Over Time</span> -->
+                    </p>
+                    <p class="ml-auto d-flex flex-column text-right">
+                      <!-- <span class="text-success">
+                        <i class="fas fa-arrow-up"></i> 33.1%
+                      </span> -->
+                      <span class="text-muted">Since last month</span>
+                    </p>
+                  </div>
+                  <!-- /.d-flex -->
+  
+                  <div class="position-relative mb-4">
+                    <canvas id="sales-chart2" height="200"></canvas>
+                  </div>
+  
+                  <div class="d-flex flex-row justify-content-end">
+                    <span class="mr-2">
+                      <i class="fas fa-square text-primary"></i> Dev Team
+                    </span>
+  
+                    <span class="mr-2">
+                      <i class="fas fa-square text-gray"></i> BPO Team
+                    </span>
+
+                    <span>
+                        <i class="fas fa-square text-red"></i> Admin Team
+                    </span>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-        <!-- /.row -->
+        
       </section>
       <!-- /.content -->
     </div>
@@ -433,5 +392,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     $('#example2').DataTable();
   });
 </script>
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="dist/js/demo.js"></script>
+<script src="dist/js/pages/dashboard3.js"></script>
 </body>
 </html>
